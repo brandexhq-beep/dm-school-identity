@@ -1,0 +1,27 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { Breadcrumbs, PageHero, SectionHeading } from '@/components/school/Blocks';
+import { eventItems } from '@/data/school';
+import { AdmissionBand } from '@/components/school/Blocks';
+---
+
+<Layout title="Events - DM Public School">
+  <Breadcrumbs current="Events" />
+  <PageHero eyebrow="School Events" title="Mark your calendars." intro="Discover upcoming activities, competitions, and celebrations happening at our campus." />
+  
+  <section class="site-container py-16 md:py-24">
+    <div class="grid gap-10 lg:grid-cols-[1fr_2fr]">
+      <SectionHeading eyebrow="Events" title="Upcoming events" />
+      <div class="grid gap-6">
+        {eventItems.map((item) => (
+          <article class="border border-border p-8 bg-card shadow-sm rounded-lg">
+            <p class="text-xs font-bold uppercase text-accent-foreground">{item.category} &middot; {item.date}</p>
+            <h3 class="mt-4 font-display text-2xl font-bold">{item.title}</h3>
+            <p class="mt-3 text-muted-foreground leading-7">{item.summary}</p>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+  <AdmissionBand />
+</Layout>
