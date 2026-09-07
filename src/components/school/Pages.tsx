@@ -11,7 +11,7 @@ export function AboutPage() {
       <Breadcrumbs current="About" />
       <PageHero eyebrow="About DMPS" title="A school shaped by learning and values." intro="An introduction to DM Public School, its purpose and the community it seeks to build." />
       
-      <section className="site-container grid gap-12 py-16 md:grid-cols-2 md:py-24 reveal-on-scroll">
+      <section className="site-container grid gap-12 py-16 md:grid-cols-2 md:py-24 reveal-on-scroll" suppressHydrationWarning={true}>
         <div>
           <SectionHeading eyebrow="Our story" title="About the school" />
           <p className="mt-6 leading-8 text-muted-foreground">DM Public School serves families in {school.locality}, {school.city}. We have a proud history of academic excellence and holistic development. Since our founding, we have been committed to providing a nurturing environment where students can thrive academically, socially, and emotionally.</p>
@@ -19,7 +19,7 @@ export function AboutPage() {
         <PhotoPlaceholder label="School campus and community" src="/campus.jpg" />
       </section>
 
-      <section className="border-y border-border bg-secondary reveal-on-scroll">
+      <section className="border-y border-border bg-secondary reveal-on-scroll" suppressHydrationWarning={true}>
         <div className="site-container grid gap-px bg-border md:grid-cols-2">
           <article className="bg-secondary py-14 md:pr-12">
             <p className="text-xs font-bold uppercase text-accent-foreground">Vision</p>
@@ -34,7 +34,7 @@ export function AboutPage() {
         </div>
       </section>
 
-      <section className="site-container py-16 md:py-24 reveal-on-scroll">
+      <section className="site-container py-16 md:py-24 reveal-on-scroll" suppressHydrationWarning={true}>
         <SectionHeading eyebrow="Leadership & people" title="A community led with care." />
         <div className="mt-10 grid gap-8 md:grid-cols-3">
           <PhotoPlaceholder label="Principal or school leader" src="/principal.jpg" aspect="portrait" />
@@ -50,7 +50,7 @@ export function AboutPage() {
         </div>
       </section>
 
-      <section className="bg-secondary reveal-on-scroll">
+      <section className="bg-secondary reveal-on-scroll" suppressHydrationWarning={true}>
         <div className="site-container py-16 md:py-24">
           <SectionHeading eyebrow="School values" title="Principles for learning and life." />
           <div className="mt-10 grid border-t border-border sm:grid-cols-2 lg:grid-cols-4">
@@ -78,7 +78,7 @@ export function AcademicsPage() {
     <>
       <Breadcrumbs current="Academics" />
       <PageHero eyebrow="Academics" title="Strong foundations. Thoughtful progression." intro="An academic journey designed to develop knowledge, independent thinking and readiness for what comes next." />
-      <section className="site-container py-16 md:py-24 reveal-on-scroll">
+      <section className="site-container py-16 md:py-24 reveal-on-scroll" suppressHydrationWarning={true}>
         <SectionHeading title="The academic approach" copy="Our curriculum is carefully designed to provide a comprehensive and balanced education, challenging students at every stage." />
         <div className="mt-12 space-y-0 border-t border-border">
           {academicStages.map((s, i) => (
@@ -96,7 +96,7 @@ export function AcademicsPage() {
           ))}
         </div>
       </section>
-      <section className="border-y border-border bg-secondary reveal-on-scroll">
+      <section className="border-y border-border bg-secondary reveal-on-scroll" suppressHydrationWarning={true}>
         <div className="site-container grid gap-10 py-16 md:grid-cols-2 md:py-24">
           <PhotoPlaceholder label="Classroom learning" src="/students_learning.jpg" />
           <div>
@@ -115,7 +115,7 @@ export function AdmissionsPage() {
     <>
       <Breadcrumbs current="Admissions" />
       <PageHero eyebrow="Admissions" title="Start your child’s journey with DMPS." intro="Clear guidance for families considering admission. We are currently accepting applications for the 2026-27 academic year." />
-      <section className="site-container grid gap-12 py-16 lg:grid-cols-[.8fr_1.2fr] lg:py-24 reveal-on-scroll">
+      <section className="site-container grid gap-12 py-16 lg:grid-cols-[.8fr_1.2fr] lg:py-24 reveal-on-scroll" suppressHydrationWarning={true}>
         <div>
           <SectionHeading eyebrow="Process" title="How admission works" />
           <ol className="mt-8 border-t border-border">
@@ -137,7 +137,7 @@ export function AdmissionsPage() {
           <EnquiryForm />
         </div>
       </section>
-      <section className="bg-secondary reveal-on-scroll">
+      <section className="bg-secondary reveal-on-scroll" suppressHydrationWarning={true}>
         <div className="site-container grid gap-10 py-16 md:grid-cols-2 md:py-24">
           <div>
             <SectionHeading eyebrow="Documents" title="What you may need" />
@@ -182,7 +182,7 @@ export function CampusPage() {
     <>
       <Breadcrumbs current="Campus" />
       <PageHero eyebrow="Campus" title="Spaces that support school life." intro="A visual guide to the DMPS campus. Our facilities are designed to provide a safe, stimulating, and modern environment." />
-      <section className="site-container py-16 md:py-24 reveal-on-scroll">
+      <section className="site-container py-16 md:py-24 reveal-on-scroll" suppressHydrationWarning={true}>
         <div className="grid gap-8 md:grid-cols-2">
           {items.map((x, i) => (
             <article key={x.name} className={i === 0 ? "md:col-span-2" : ""}>
@@ -210,7 +210,7 @@ export function StudentLifePage() {
     <>
       <Breadcrumbs current="Student Life" />
       <PageHero eyebrow="Student life" title="Participation builds confidence." intro="A school experience enriched by activities, teamwork, expression and shared celebration." />
-      <section className="site-container py-16 md:py-24 reveal-on-scroll">
+      <section className="site-container py-16 md:py-24 reveal-on-scroll" suppressHydrationWarning={true}>
         <div className="grid gap-10 md:grid-cols-12">
           {items.map((x, i) => (
             <article key={x.name} className={i % 3 === 0 ? "md:col-span-7" : "md:col-span-5"}>
@@ -231,7 +231,7 @@ export function ContactPage() {
     <>
       <Breadcrumbs current="Contact" />
       <PageHero eyebrow="Contact" title="Speak with DM Public School." intro="For admissions, visits or general questions, please reach out to us using the details below." />
-      <section className="site-container grid gap-12 py-16 lg:grid-cols-[.8fr_1.2fr] lg:py-24 reveal-on-scroll">
+      <section className="site-container grid gap-12 py-16 lg:grid-cols-[.8fr_1.2fr] lg:py-24 reveal-on-scroll" suppressHydrationWarning={true}>
         <div>
           <h2 className="font-display text-2xl font-bold">School information</h2>
           <div className="mt-7 space-y-6">
@@ -257,7 +257,7 @@ export function LegalPage({ kind }: { kind: "Privacy" | "Terms" }) {
     <>
       <Breadcrumbs current={kind} />
       <PageHero eyebrow="Information" title={kind === "Privacy" ? "Privacy policy" : "Website terms"} intro={`The standard ${kind.toLowerCase()} information for DMPS.`} />
-      <section className="site-container max-w-3xl py-16 reveal-on-scroll">
+      <section className="site-container max-w-3xl py-16 reveal-on-scroll" suppressHydrationWarning={true}>
         <h2 className="mt-10 font-display text-2xl font-bold">Purpose</h2>
         <p className="mt-4 leading-7 text-muted-foreground">This page contains standard information regarding the use of the DM Public School website and the handling of enquiries and visitor information.</p>
       </section>

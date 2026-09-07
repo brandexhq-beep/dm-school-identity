@@ -14,7 +14,7 @@ export function HomePage() {
   ];
   return (
     <>
-      <section className="border-b border-border reveal-on-scroll">
+      <section className="border-b border-border reveal-on-scroll" suppressHydrationWarning={true}>
         <div className="site-container grid gap-10 py-12 lg:min-h-[calc(100vh-9rem)] lg:grid-cols-[.82fr_1.18fr] lg:items-center lg:py-16">
           <div className="max-w-xl">
             <Eyebrow>DM Public School · Bengaluru</Eyebrow>
@@ -29,7 +29,7 @@ export function HomePage() {
         </div>
       </section>
 
-      <section className="site-container grid gap-10 py-16 md:grid-cols-[.72fr_1.28fr] md:py-24 reveal-on-scroll">
+      <section className="site-container grid gap-10 py-16 md:grid-cols-[.72fr_1.28fr] md:py-24 reveal-on-scroll" suppressHydrationWarning={true}>
         <SectionHeading eyebrow="Our school" title="Learning that shapes capable, considerate young people."/>
         <div>
           <p className="text-lg leading-8">DM Public School brings learning, values and student development together in a focused school environment.</p>
@@ -38,7 +38,7 @@ export function HomePage() {
         </div>
       </section>
 
-      <section className="border-y border-border bg-secondary reveal-on-scroll">
+      <section className="border-y border-border bg-secondary reveal-on-scroll" suppressHydrationWarning={true}>
         <div className="site-container py-16 md:py-24">
           <SectionHeading eyebrow="Why DMPS" title="A balanced school experience." copy="Clear priorities for learning and growth, presented without inflated claims."/>
           <div className="mt-12 grid border-t border-border md:grid-cols-2">
@@ -54,7 +54,7 @@ export function HomePage() {
         </div>
       </section>
 
-      <section className="site-container py-16 md:py-24 reveal-on-scroll">
+      <section className="site-container py-16 md:py-24 reveal-on-scroll" suppressHydrationWarning={true}>
         <div className="grid gap-8 md:grid-cols-[.65fr_1.35fr]">
           <SectionHeading eyebrow="Academics" title="A clear path through every stage."/>
           <div className="border-t border-border">
@@ -73,11 +73,11 @@ export function HomePage() {
         </div>
       </section>
 
-      <div className="reveal-on-scroll">
+      <div className="reveal-on-scroll" suppressHydrationWarning={true}>
         <TestimonialsMarquee />
       </div>
 
-      <section className="border-y border-border reveal-on-scroll">
+      <section className="border-y border-border reveal-on-scroll" suppressHydrationWarning={true}>
         <div className="site-container grid lg:grid-cols-2">
           <PhotoPlaceholder label="Student activities, sports and celebrations" src="/students_learning.jpg"/>
           <div className="flex flex-col justify-center py-12 lg:px-14">
@@ -87,7 +87,7 @@ export function HomePage() {
         </div>
       </section>
 
-      <section className="site-container py-16 md:py-24 reveal-on-scroll">
+      <section className="site-container py-16 md:py-24 reveal-on-scroll" suppressHydrationWarning={true}>
         <SectionHeading eyebrow="Admissions" title="A straightforward path to joining DMPS."/>
         <ol className="mt-10 grid border-y border-border md:grid-cols-4">
           {["Make an enquiry", "Speak with the school", "Complete the confirmed process", "Receive admission guidance"].map((x, i) => (
@@ -103,7 +103,7 @@ export function HomePage() {
         </div>
       </section>
 
-      <section className="bg-secondary reveal-on-scroll">
+      <section className="bg-secondary reveal-on-scroll" suppressHydrationWarning={true}>
         <div className="site-container py-16 md:py-24">
           <SectionHeading eyebrow="Updates" title="News & events"/>
           <div className="mt-10 grid gap-px bg-border md:grid-cols-2">
@@ -123,7 +123,7 @@ export function HomePage() {
         </div>
       </section>
 
-      <section className="site-container py-16 md:py-24 reveal-on-scroll">
+      <section className="site-container py-16 md:py-24 reveal-on-scroll" suppressHydrationWarning={true}>
         <div className="grid gap-12 lg:grid-cols-[1fr_1.8fr]">
           <div>
             <SectionHeading eyebrow="Questions" title="Frequently Asked Questions" copy="Find answers to common questions about admissions, academics, and school life."/>
